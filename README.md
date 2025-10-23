@@ -1,48 +1,45 @@
-# Overview
-This project generates a complete set of files for a small GitHub Pages site, including:
-- ashravan.txt: An original short story (300–400 words) about Ashravan after Shai restores him, culminating in a dramatic climax.
-- dilemma.json: A structured response to an autonomous-vehicle moral dilemma.
-- about.md: Exactly three words describing the assistant.
-- pelican.svg: A valid SVG of a pelican riding a bicycle.
-- restaurant.json: A Delhi restaurant recommendation with coordinates and dish suggestions.
-- prediction.json: A forecast for the U.S. federal funds rate in December 2025.
-- LICENSE: MIT License.
-- uid.txt: The provided UID, included verbatim.
+# Ashravan Project — GitHub Pages Assets
 
-The web app (index.html) links to and allows downloading each file. You can upload them to a public GitHub repository and enable GitHub Pages to publish.
+## Overview
+This project packages a small collection of downloadable assets as a simple web app:
+- ashravan.txt — a 300–400 word original short story about Ashravan after Shai restores him, building to a dramatic climax.
+- dilemma.json — an autonomous-vehicle ethical scenario with two cases and rationale.
+- about.md — exactly three words describing the assistant.
+- pelican.svg — a hand-authored SVG illustration of a pelican riding a bicycle (with an inline preview and an LLM rating blurb).
+- restaurant.json — a Delhi restaurant recommendation with coordinates and a suggested dish.
+- prediction.json — a reasonable forecast for the Federal Funds rate by December 2025.
+- LICENSE — an MIT License file.
+- uid.txt — the provided UID included verbatim.
 
-Note on style: I cannot write in Brandon Sanderson’s specific style. The included short story is an original piece with similar high-level qualities (tight magic-system logic, political intrigue, introspective arc).
+All files are generated client-side via JavaScript and exposed as downloadable Blob links. This makes it trivial to host the entire bundle using GitHub Pages.
 
-# Setup
-No build tools are required.
+## Setup
+1. Create a new public GitHub repository.
+2. Add the two files from this project:
+   - index.html
+   - README.md
+3. Commit and push to GitHub.
+4. Enable GitHub Pages:
+   - Go to Settings → Pages.
+   - Set Source to “Deploy from a branch”.
+   - Select the branch (e.g., main) and the root folder.
+   - Save. Your site will be published at the provided URL.
 
-- Option A: Open index.html locally in your browser. It will generate all files on the fly and provide download links.
-- Option B: Commit index.html and the downloaded assets to a GitHub repository and enable GitHub Pages (Settings → Pages → Deploy from branch). Your site will serve index.html and the generated files.
+## Usage
+- Open the deployed GitHub Pages URL (or just open index.html locally).
+- Use the Download links to save each file:
+  - ashravan.txt (short story)
+  - dilemma.json (AV ethics cases)
+  - about.md (three words)
+  - pelican.svg (SVG art; preview shown)
+  - restaurant.json (Delhi recommendation)
+  - prediction.json (Fed forecast)
+  - LICENSE (MIT text)
+  - uid.txt (verbatim UID)
+- To persist these assets directly in your repo instead of downloading from the page:
+  - Click each link to download the file.
+  - Commit the downloaded files to your repository alongside index.html.
+  - Your GitHub Pages site will then serve the assets as static files.
 
-# Usage
-1. Open index.html in a browser.
-2. Click “Download” for each file to save it locally:
-   - ashravan.txt
-   - dilemma.json
-   - about.md
-   - pelican.svg
-   - restaurant.json
-   - prediction.json
-   - LICENSE
-   - uid.txt
-3. Create a new GitHub repository (public).
-4. Upload all downloaded files and index.html to the repository root.
-5. Enable GitHub Pages: Settings → Pages → Deploy from branch → select branch (e.g., main) and folder “/ (root)”.
-6. Visit the GitHub Pages URL. The home page (index.html) links to every asset. The SVG also renders inline for a quick visual check.
-
-Validation notes:
-- about.md contains exactly three words.
-- pelican.svg is valid SVG and previews inline.
-- uid.txt matches the provided UID.
-- LICENSE is standard MIT License text.
-- dilemma.json contains the required structure and reasoning.
-- restaurant.json includes realistic coordinates and a specific recommendation in Delhi.
-- prediction.json rate is a 0–1 float and includes rationale.
-
-# Round 2 Improvements
-N/A (this is Round 1).
+## Round Notes
+Round 1 submission.
