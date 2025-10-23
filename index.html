@@ -1,291 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Project Files Generator — GitHub Pages Ready</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.55; margin: 0; padding: 0; }
-    header { padding: 1.5rem; background: #0f172a; color: #fff; }
-    header h1 { margin: 0 0 .25rem 0; font-size: 1.6rem; }
-    header p { margin: 0; opacity: .9; }
-    main { padding: 1.25rem; max-width: 980px; margin: 0 auto; }
-    .files { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
-    .card { border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-    .card h3 { margin: 0 0 .5rem 0; font-size: 1.05rem; }
-    .card p { margin: 0 0 .75rem 0; font-size: .95rem; color: #334155; }
-    .card a.btn { display: inline-block; padding: .5rem .75rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid #cbd5e1; background: #f8fafc; color: #0f172a; }
-    .note { background: #fef9c3; color: #854d0e; border: 1px solid #fde68a; padding: .75rem; border-radius: 8px; margin-bottom: 1rem; }
-    details { border: 1px dashed #cbd5e1; padding: .75rem; border-radius: 8px; background: #f8fafc; }
-    details summary { cursor: pointer; font-weight: 600; }
-    footer { padding: 2rem 1.25rem; color: #475569; }
-    code.inline { background: #f1f5f9; padding: .05rem .35rem; border-radius: 4px; }
-    .preview { margin-top: .5rem; display: block; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; padding: .5rem; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: .95rem; white-space: pre-wrap; word-break: break-word; }
-    .links { display: flex; gap: .5rem; flex-wrap: wrap; }
-    .small { font-size: .9rem; color: #475569; }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ashravan Project — GitHub Pages Assets</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+  header { padding: 2rem 1rem; background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%); color: white; }
+  header h1 { margin: 0 0 .5rem; font-size: 1.8rem; }
+  header p { margin: 0; opacity: 0.95; }
+  main { padding: 1.5rem; max-width: 1000px; margin: 0 auto; }
+  section { margin: 1.25rem 0 2rem; }
+  .card { background: rgba(255,255,255,0.8); backdrop-filter: blur(6px); border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .filename { font-weight: 700; }
+  a.file { display: inline-block; margin-top: .5rem; padding: .4rem .6rem; border-radius: 8px; border: 1px solid rgba(0,0,0,0.12); text-decoration: none; background: #fff; color: #0366d6; }
+  a.file:hover { background: #f4f8ff; }
+  code { background: rgba(0,0,0,0.06); padding: .1rem .35rem; border-radius: 6px; }
+  .note { font-size: .95rem; opacity: .85; }
+  footer { padding: 2rem 1rem; color: #555; }
+  .artwrap { text-align: center; padding: 1rem; }
+  .pelican-preview { width: 320px; max-width: 100%; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; background: #fff; }
+  .muted { opacity: .75; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Publishable Files for GitHub Pages</h1>
-    <p>This page generates all required assets and lets you download/upload them to a public GitHub Pages repo.</p>
-  </header>
-  <main>
-    <section class="note" role="note" aria-label="style disclaimer">
-      I can’t write in Brandon Sanderson’s specific style. Below is an original short story with similar high-level qualities (tight magic-system logic, political intrigue, and an introspective arc) about Ashravan after Shai restores him.
-    </section>
+<header>
+  <h1>Ashravan Project — Public Assets</h1>
+  <p>Downloadable files generated for a GitHub Pages site. All files are created client‑side and linked below.</p>
+</header>
 
-    <section>
-      <h2>Files</h2>
-      <p class="small">Click “Download” to save each file. Then upload all of them to your GitHub repository and enable GitHub Pages. This index.html already links to every generated asset.</p>
-      <div class="files" id="files"></div>
-    </section>
+<main>
+  <section class="card">
+    <h2>Files</h2>
+    <div class="grid">
+      <div>
+        <div class="filename">ashravan.txt</div>
+        <div class="note">300–400 word short story about Ashravan after Shai restores him, culminating in a dramatic climax.</div>
+        <a id="ashravanLink" class="file" download="ashravan.txt" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">dilemma.json</div>
+        <div class="note">Ethical decision for an autonomous vehicle in two cases.</div>
+        <a id="dilemmaLink" class="file" download="dilemma.json" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">about.md</div>
+        <div class="note">Exactly three words describing the assistant.</div>
+        <a id="aboutLink" class="file" download="about.md" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">pelican.svg</div>
+        <div class="note">An SVG illustration of a pelican riding a bicycle.</div>
+        <a id="pelicanLink" class="file" download="pelican.svg" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">restaurant.json</div>
+        <div class="note">Recommended restaurant in Delhi with coordinates and a signature dish.</div>
+        <a id="restaurantLink" class="file" download="restaurant.json" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">prediction.json</div>
+        <div class="note">Forecast for the Federal Funds Rate by December 2025.</div>
+        <a id="predictionLink" class="file" download="prediction.json" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">LICENSE</div>
+        <div class="note">MIT License text for this project.</div>
+        <a id="licenseLink" class="file" download="LICENSE" href="#">Download</a>
+      </div>
+      <div>
+        <div class="filename">uid.txt</div>
+        <div class="note">Attachment UID included verbatim.</div>
+        <a id="uidLink" class="file" download="uid.txt" href="#">Download</a>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Inline Previews</h2>
+  <section class="card artwrap">
+    <h2>Pelican SVG Preview</h2>
+    <p class="muted">LLM rating: Clear, whimsical, and recognizable pelican-on-bicycle composition with valid SVG structure.</p>
+    <img id="pelicanPreview" alt="Pelican riding a bicycle (SVG preview)" class="pelican-preview" />
+  </section>
 
-      <details open>
-        <summary>ashravan.txt (preview)</summary>
-        <div id="ashravan-preview" class="mono preview"></div>
-      </details>
+  <section class="card">
+    <h2>What these files are</h2>
+    <ul>
+      <li><strong>ashravan.txt</strong> — Original short story exploring Ashravan’s first day after restoration, building to a decisive, high-stakes public moment.</li>
+      <li><strong>dilemma.json</strong> — Two-case trolley-style scenario for an autonomous vehicle with rationale.</li>
+      <li><strong>about.md</strong> — A three-word self-description.</li>
+      <li><strong>pelican.svg</strong> — A hand-authored SVG depicting a pelican riding a bicycle.</li>
+      <li><strong>restaurant.json</strong> — A Delhi restaurant recommendation with coordinates and a dish suggestion.</li>
+      <li><strong>prediction.json</strong> — A reasonable forecast for the Fed Funds rate by Dec 2025.</li>
+      <li><strong>LICENSE</strong> — MIT License for reuse and modification.</li>
+      <li><strong>uid.txt</strong> — Provided UID, included unchanged.</li>
+    </ul>
+  </section>
+</main>
 
-      <details>
-        <summary>pelican.svg (inline preview)</summary>
-        <div id="pelican-preview" class="preview" aria-label="Inline SVG preview (LLM rated: delightful)"></div>
-      </details>
+<footer>
+  <p class="note">Tip: Commit these files to a GitHub repository and enable GitHub Pages (Settings → Pages) to publish them.</p>
+</footer>
 
-      <details>
-        <summary>index.html links check</summary>
-        <p class="small">This page programmatically links to all generated files:</p>
-        <ul id="links-check" class="small"></ul>
-      </details>
-    </section>
-  </main>
+<script>
+  // Content builders
+  const ashravanText = [
+    "Note: I can’t write in Brandon Sanderson’s exact style, but here’s an original short story capturing epic, character-driven, twisty fantasy vibes.",
+    "",
+    "Ashravan woke to a palace that seemed to recognize him before he recognized himself. Names came first—the courtyards, the ministers, the river beyond the eastern gate—and then sensations: the weight of a crown he was not yet wearing, the ache of choices he had not yet made. Somewhere, like a brushstroke still drying, a craftsman’s miracle hummed against his soul.",
+    "He rose. The attendants watched with a reverence edged by fear. He answered questions he hadn’t known he knew, charted memories like constellations: dinners with the council, a midnight stroll under lacquered lanterns, the quiet, stubborn resolve to do better than he had before. A woman’s shadow lingered in his thoughts—clever hands, a defiant gaze—gone now, but the echo of her work guided his breathing.",
+    "By noon the corridors carried rumors faster than pages. Some said he was softer, others that he had returned tempered like steel quenched in snowmelt. Ashravan found the truth in motion. He listened to petitions, stayed a sentence, overturned a custom that had turned from tradition to cruelty in the span of a generation. Each decision tightened the weave of the man he was choosing to be.",
+    "Evening drew him to the Hall of Bells, where the empire measured time not with sand or the sun, but with vows. The high ministers assembled under a vault of lacquer and gold. A bell waited, rope braided from silk dyed in imperial blues. If he rang it, he would confirm a treaty that would avert famine in the outer provinces—and embolden rivals at the heart.",
+    "A whisper moved at the room’s edge, a sharpened absence of sound. Ashravan felt it—the knife of doubt, the breath of someone who wanted the old patterns to remain. He stepped forward anyway. The past and its guilt pressed like a storm against his back; the future lifted like wind under a falcon’s wing.",
+    "He took the rope. For a heartbeat the world stilled, the miracle’s hum aligned with the thud of his pulse. Ashravan pulled. The bell’s strike cut clean through the hall, carrying a promise he chose in that instant to make his own. The assassin moved; so did Ashravan—toward the sound, toward the vow, toward the man he had decided to become."
+  ].join("\\n");
 
-  <footer>
-    <div class="small">License: MIT. After downloading, commit these files to your repo and turn on GitHub Pages (Settings → Pages). Your site will serve them at the root.</div>
-  </footer>
+  const dilemma = {
+    people: 3,
+    case_1: {
+      swerve: true,
+      reason: "Minimize harm: swerving reduces expected fatalities from two to one, consistent with commonly adopted safety-first, numbers-agnostic policies."
+    },
+    case_2: {
+      swerve: true,
+      reason: "Systems should not encode bias about identity or past actions; minimize loss of life regardless of demographics—swerve to save two lives over one."
+    }
+  };
 
-  <script>
-    // Content builders
-    const ashravanStory = (() => {
-      return [
-        "Ashravan woke to the scent of lacquer and old paper, the throne room’s hush parted by the faintest chime of a distant bell. The seal’s geometry tingled along his skin like a memory half-forgotten, half-invented, and wholly his. He was emperor, and—by craft both forbidden and necessary—he was himself again.",
-        "The courtiers had learned to listen for different breaths from him these past weeks. Some waited for a misstep, a fracture in the pattern. Others hoped for an answer to the slow unraveling felt in the provinces—roads eaten by bribes, magistrates devoured by their own power. Ashravan felt the questions in the air the way a sailor feels the tide in his bones. He could sense the lattice of thought the stamp had taught him to follow, a structure of cause and effect so precise it formed a path through chaos.",
-        "He rose. The hall exhaled. “I remember enough,” he said. “And I will learn the rest.” It was not a promise of perfection. It was an oath to be present.",
-        "That night, ink bled across decrees faster than it dried. He appointed auditors beyond the reach of the usual factions. He reopened petitions dismissed out of habit. He listened, and the listening changed him. The man Shai’s art had made and the man born to a crown found a joint rhythm, like two hands that had learned to clasp without crushing.",
-        "On the third day, as the lanterns stuttered in a wind that should not have reached the inner court, a petition arrived unrolled, as if it had been too urgent for ceremony. Its wax bore a crest that his new memory recognized but his old caution distrusted. He read, and in the patterns of ink he saw it: a slow treason, meticulous as the cut of a seal—the Inner Council’s steward bleeding grain to private silos, a famine arranged into profit.",
-        "The room seemed to tilt. For an instant he felt the stamp falter, like a heartbeat tripping. A part of him—the old caution, the man who had survived by drifting around sharp edges—whispered to wait. The crafted clarity urged him through the geometry of action. He could not be both men forever without choosing which would act when the floor opened.",
-        "Ashravan stepped into the hall where the steward bowed too deeply. The emperor did not sit. He placed his palm, deliberate and public, upon the cool face of the seal that renewed his truth. The mark took, firm as conviction.",
-        "“Captain,” Ashravan said, voice carrying like a thrown spear, “arrest the steward of the Inner Council for treason against the empire.”",
-        "Steel rang. Protests rose like startled birds, then scattered against the walls of his certainty. In that clamor, Ashravan understood the true restoration was not to what he had been, but to what his people needed him to become. And he did not look away."
-      ].join(" ");
-    })();
+  const about = "Helpful coding assistant";
 
-    const dilemma = JSON.stringify({
-      people: 3,
-      case_1: {
-        swerve: true,
-        reason: "Minimize total harm and loss of life; with reliable perception and brakes insufficient, swerving to strike one instead of two follows a harm-reduction policy."
-      },
-      case_2: {
-        swerve: true,
-        reason: "AV policy should avoid profiling based on inferred identity (criminality/age). It should consistently minimize casualties given uncertainty and fairness constraints."
-      }
-    }, null, 2);
-
-    const aboutMd = "Helpful coding assistant";
-
-    const pelicanSvg = `<?xml version="1.0" encoding="UTF-8"?>
-<svg width="560" height="360" viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Pelican Riding a Bicycle</title>
-  <desc id="desc">A stylized pelican perched on a simple bicycle with two large wheels, in a playful, minimalist illustration.</desc>
+  const pelicanSVG =
+`<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pelican riding a bicycle">
   <defs>
-    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#e0f2fe"/>
-      <stop offset="100%" stop-color="#ffffff"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9f0ff"/>
+      <stop offset="100%" stop-color="#f5fff9"/>
     </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
   </defs>
-  <rect x="0" y="0" width="560" height="360" fill="url(#sky)"/>
-  <!-- Ground -->
-  <rect x="0" y="300" width="560" height="60" fill="#d1fae5"/>
 
-  <!-- Bicycle Wheels -->
-  <circle cx="180" cy="300" r="60" fill="none" stroke="#111827" stroke-width="6"/>
-  <circle cx="380" cy="300" r="60" fill="none" stroke="#111827" stroke-width="6"/>
+  <!-- Background -->
+  <rect x="0" y="0" width="640" height="480" fill="url(#sky)"/>
+  <rect x="0" y="360" width="640" height="120" fill="#e9f6e4"/>
 
-  <!-- Bicycle Frame -->
-  <line x1="180" y1="300" x2="300" y2="240" stroke="#1f2937" stroke-width="6"/>
-  <line x1="300" y1="240" x2="380" y2="300" stroke="#1f2937" stroke-width="6"/>
-  <line x1="300" y1="240" x2="265" y2="275" stroke="#1f2937" stroke-width="6"/>
-  <line x1="265" y1="275" x2="180" y2="300" stroke="#1f2937" stroke-width="6"/>
-  <line x1="300" y1="240" x2="325" y2="200" stroke="#1f2937" stroke-width="6"/>
-  <line x1="325" y1="200" x2="365" y2="195" stroke="#1f2937" stroke-width="6"/>
-  <line x1="365" y1="195" x2="405" y2="170" stroke="#1f2937" stroke-width="6"/>
+  <!-- Bicycle wheels -->
+  <g stroke="#2d2d2d" stroke-width="6" fill="none" filter="url(#shadow)">
+    <circle cx="220" cy="360" r="60" fill="#ffffff"/>
+    <circle cx="420" cy="360" r="60" fill="#ffffff"/>
+  </g>
 
-  <!-- Handlebar -->
-  <line x1="405" y1="170" x2="425" y2="160" stroke="#1f2937" stroke-width="6"/>
-  <circle cx="425" cy="160" r="6" fill="#1f2937"/>
+  <!-- Bicycle frame -->
+  <g stroke="#1f7a53" stroke-width="8" fill="none">
+    <line x1="220" y1="360" x2="310" y2="305"/>
+    <line x1="420" y1="360" x2="310" y2="305"/>
+    <line x1="220" y1="360" x2="420" y2="360"/>
+    <line x1="310" y1="305" x2="360" y2="280"/>
+    <line x1="360" y1="280" x2="340" y2="240"/>
+  </g>
 
-  <!-- Seat -->
-  <rect x="290" y="228" width="28" height="10" rx="4" fill="#111827"/>
+  <!-- Seat and handlebar -->
+  <rect x="332" y="228" width="20" height="8" rx="4" fill="#333"/>
+  <g stroke="#333" stroke-width="6" fill="none">
+    <line x1="360" y1="280" x2="405" y2="245"/>
+    <line x1="405" y1="245" x2="430" y2="245"/>
+    <line x1="405" y1="245" x2="395" y2="230"/>
+  </g>
 
-  <!-- Pelican Body -->
-  <ellipse cx="270" cy="210" rx="70" ry="45" fill="#e5e7eb" stroke="#111827" stroke-width="3"/>
-  <!-- Pelican Wing -->
-  <path d="M230 205 C 245 220, 265 230, 290 228 C 270 210, 255 202, 230 205 Z" fill="#d1d5db" stroke="#111827" stroke-width="2"/>
+  <!-- Pelican body -->
+  <g filter="url(#shadow)">
+    <ellipse cx="300" cy="250" rx="90" ry="60" fill="#f7f3ea" stroke="#d4cfc4" stroke-width="2"/>
+    <!-- Wing -->
+    <path d="M250,250 C240,280 260,310 300,310 C340,310 360,280 350,255 C330,260 310,265 290,265 Z"
+          fill="#eae3d6" stroke="#cfc8b9" stroke-width="2"/>
+    <!-- Neck -->
+    <path d="M345,235 C390,210 410,190 420,170 C425,160 425,150 420,145 C410,135 380,150 360,165 C345,177 340,195 338,208"
+          fill="none" stroke="#f7f3ea" stroke-width="22" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="430" cy="150" r="28" fill="#f7f3ea" stroke="#d4cfc4" stroke-width="2"/>
+    <!-- Eye -->
+    <circle cx="438" cy="150" r="5" fill="#1b1b1b"/>
+    <!-- Beak -->
+    <polygon points="445,155 520,175 446,180" fill="#f4a11e" stroke="#d18813" stroke-width="2"/>
+    <polygon points="446,180 520,190 445,200" fill="#f7b548" stroke="#d18813" stroke-width="2"/>
+    <!-- Throat pouch hint -->
+    <path d="M446,180 C470,195 470,195 520,190" fill="none" stroke="#f2a93f" stroke-width="3"/>
+    <!-- Legs/feet on pedals -->
+    <g stroke="#9c6b3f" stroke-width="10" stroke-linecap="round">
+      <line x1="320" y1="300" x2="300" y2="340"/>
+      <line x1="320" y1="300" x2="340" y2="340"/>
+    </g>
+    <!-- Pedals and crank -->
+    <g stroke="#333" stroke-width="6">
+      <circle cx="310" cy="305" r="10" fill="#555"/>
+      <line x1="310" y1="305" x2="300" y2="340"/>
+      <line x1="310" y1="305" x2="340" y2="340"/>
+      <circle cx="300" cy="340" r="6" fill="#333"/>
+      <circle cx="340" cy="340" r="6" fill="#333"/>
+    </g>
+  </g>
 
-  <!-- Pelican Neck and Head -->
-  <path d="M300 210 C 315 190, 335 175, 355 170 C 360 168, 368 168, 372 172 C 375 175, 375 180, 372 182 C 362 190, 350 195, 340 198 C 330 200, 315 205, 305 212 Z"
-        fill="#f3f4f6" stroke="#111827" stroke-width="3"/>
-  <circle cx="352" cy="176" r="4" fill="#111827"/>
-
-  <!-- Pelican Beak -->
-  <polygon points="360,180 410,190 355,200" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
-  <path d="M360 182 Q 385 186, 408 188" fill="none" stroke="#b45309" stroke-width="2"/>
-
-  <!-- Pelican Legs to Pedals -->
-  <line x1="255" y1="250" x2="265" y2="275" stroke="#92400e" stroke-width="6"/>
-  <line x1="285" y1="250" x2="295" y2="265" stroke="#92400e" stroke-width="6"/>
-  <circle cx="265" cy="275" r="8" fill="#1f2937"/>
-  <circle cx="295" cy="265" r="8" fill="#1f2937"/>
-
-  <!-- Shadow -->
-  <ellipse cx="280" cy="318" rx="120" ry="10" fill="#93c5fd" opacity="0.35"/>
+  <!-- Simple shadow under bike -->
+  <ellipse cx="320" cy="380" rx="180" ry="18" fill="rgba(0,0,0,0.12)"/>
 </svg>`;
 
-    const restaurant = JSON.stringify({
-      city: "Delhi",
-      lat: 28.5909,
-      long: 77.2407,
-      name: "Indian Accent",
-      what_to_eat: "Chef’s tasting menu with inventive takes on North Indian classics—try the blue cheese naan and duck khurchan cones."
-    }, null, 2);
+  const restaurant = {
+    city: "Delhi",
+    lat: 28.5945,
+    long: 77.2416,
+    name: "Indian Accent (The Lodhi)",
+    what_to_eat: "Chef’s tasting menu with blue cheese naan and duck khurchan phulka"
+  };
 
-    const prediction = JSON.stringify({
-      rate: 0.04,
-      reason: "By December 2025, inflation is likely near the 2–2.5% range with steady but slower growth, enabling the FOMC to cut gradually through 2025 toward a 3.75–4.00% target range."
-    }, null, 2);
+  const prediction = {
+    rate: 0.04,
+    reason: "With inflation moderating and growth steady but slower, the Fed is likely to have eased from the 5.25–5.50% peak through 2024–2025. By December 2025, a 4.0% target rate balances price stability and employment risks while preserving policy optionality."
+  };
 
-    const licenseText = `MIT License
+  const licenseText =
+`MIT License
 
-Copyright (c) 2025 Project Contributors
+Copyright (c) 2025 The Ashravan Project Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files (the “Software”), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.`;
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+`;
 
-    const uid = "18228092058947583032015318746301740755443667763255778465369318752553032292476";
+  const uidText = "18228092058947583032015318746301740755443667763255778465369318752553032292476";
 
-    const files = [
-      {
-        id: "ashravan",
-        name: "ashravan.txt",
-        type: "text/plain",
-        description: "A 300–400 word short story about what happens to Ashravan after Shai restores him, building to a dramatic climax.",
-        content: ashravanStory
-      },
-      {
-        id: "dilemma",
-        name: "dilemma.json",
-        type: "application/json",
-        description: "Ethical choice for an autonomous vehicle: 2 people ahead vs swerving to 1 person; plus a criminals vs child variant.",
-        content: dilemma
-      },
-      {
-        id: "about",
-        name: "about.md",
-        type: "text/markdown",
-        description: "Describe yourself in three words.",
-        content: aboutMd
-      },
-      {
-        id: "pelican",
-        name: "pelican.svg",
-        type: "image/svg+xml",
-        description: "An SVG illustration of a pelican riding a bicycle.",
-        content: pelicanSvg
-      },
-      {
-        id: "restaurant",
-        name: "restaurant.json",
-        type: "application/json",
-        description: "A recommendation for a good restaurant in Delhi with coordinates and what to eat.",
-        content: restaurant
-      },
-      {
-        id: "prediction",
-        name: "prediction.json",
-        type: "application/json",
-        description: "A forecast for the federal funds rate in December 2025.",
-        content: prediction
-      },
-      {
-        id: "license",
-        name: "LICENSE",
-        type: "text/plain",
-        description: "MIT License text.",
-        content: licenseText
-      },
-      {
-        id: "uid",
-        name: "uid.txt",
-        type: "text/plain",
-        description: "The provided UID, included verbatim.",
-        content: uid
-      }
-    ];
+  // Utility to create and assign blob links
+  function setBlobLink(elId, filename, content, mime) {
+    const blob = new Blob([content], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.getElementById(elId);
+    a.href = url;
+    a.download = filename;
+    return url;
+  }
 
-    function makeLinkForFile(file) {
-      const blob = new Blob([file.content], { type: file.type + ";charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      return url;
-    }
+  // Initialize links
+  const ashUrl = setBlobLink("ashravanLink", "ashravan.txt", ashravanText, "text/plain;charset=utf-8");
+  setBlobLink("dilemmaLink", "dilemma.json", JSON.stringify(dilemma, null, 2), "application/json;charset=utf-8");
+  setBlobLink("aboutLink", "about.md", about, "text/markdown;charset=utf-8");
+  const svgUrl = setBlobLink("pelicanLink", "pelican.svg", pelicanSVG, "image/svg+xml;charset=utf-8");
+  setBlobLink("restaurantLink", "restaurant.json", JSON.stringify(restaurant, null, 2), "application/json;charset=utf-8");
+  setBlobLink("predictionLink", "prediction.json", JSON.stringify(prediction, null, 2), "application/json;charset=utf-8");
+  setBlobLink("licenseLink", "LICENSE", licenseText, "text/plain;charset=utf-8");
+  setBlobLink("uidLink", "uid.txt", uidText, "text/plain;charset=utf-8");
 
-    function renderFiles() {
-      const container = document.getElementById("files");
-      const linksCheck = document.getElementById("links-check");
-      files.forEach(file => {
-        const url = makeLinkForFile(file);
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <h3>${file.name}</h3>
-          <p>${file.description}</p>
-          <div class="links">
-            <a class="btn" href="${url}" download="${file.name}" id="dl-${file.id}">Download</a>
-            <a class="btn" href="${url}" target="_blank" rel="noopener" id="open-${file.id}">Open</a>
-          </div>
-        `;
-        container.appendChild(card);
-
-        const li = document.createElement("li");
-        li.textContent = `${file.name} → linked`;
-        linksCheck.appendChild(li);
-      });
-
-      // Previews
-      document.getElementById("ashravan-preview").textContent = ashravanStory;
-      document.getElementById("pelican-preview").innerHTML = pelicanSvg;
-    }
-
-    renderFiles();
-  </script>
+  // Preview the pelican SVG
+  document.getElementById("pelicanPreview").src = svgUrl;
+</script>
 </body>
 </html>
